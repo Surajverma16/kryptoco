@@ -9,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 DB_PATH = Path(__file__).parent / "data" / "company_state.db"
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 # --- AUTO-LAUNCH main.py IN BACKGROUND FOR CLOUD / LINUX HOSTING ---
 @st.cache_resource
